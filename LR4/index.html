@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LR4</title>
+    <script src="script.js"></script>
+<style>
+  body{
+    background: url("Фон.png");
+  }
+  th, td, tr{
+      padding: 10px;
+    }
+  .name{
+     padding-left: 12px;
+   }
+  .form{
+      text-shadow: 2px 2px 4px rgba(8,8,8,8.5);
+      cursor: pointer;
+    }
+  .items th, .items td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  .price:hover{
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+}
+  .buy{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .OrderPrice{
+    margin-bottom: 100px;
+  }
+</style>
+</head>
+<body>
+<h3>Новый товар:</h3>
+  <form>
+  <table>
+    <tr>
+      <td>Название: <input id="name" class="name" type="text" name="name" /><br/></td>
+    </tr>
+    <tr>
+      <td>Стоимость: <input id="cost" type="text" name="cost"/><br/></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="Добавить" onclick="NewElement()" /></td>
+    </tr>
+  </table>
+  </form>
+
+<table class="items">
+    <thead>
+        <tr>
+            <th>№</th>
+            <th>Наименование</th>
+            <th>Стоимость</th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
+
+<div class="buy">
+<h3>Добавление товаров в корзину:</h3>
+  <form>
+  <table class="OrderAdd">
+    <tr>
+      <td>Номер строки таблицы товаров: <input id="str" type="text" name="str" /><br/></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="Добавить в корзину" onclick="AddToCart()" /></td>
+    </tr>
+  </table>
+  </form>
+<table class="items">
+    <thead>
+        <tr>
+            <th>№</th>
+            <th>Наименование</th>
+            <th>Стоимость</th>
+        </tr>
+    </thead>
+    <tbody id="OrderTbody"></tbody>
+</table>
+</div>
+
+<form>
+  <table class="OrderPrice">
+    <tr>
+      <td><input type="button" value="Рассчитать стоимость корзины" onclick="OrderPrice()" /></td>
+    </tr>
+  </table>
+  </form>
+</body>
+</html>

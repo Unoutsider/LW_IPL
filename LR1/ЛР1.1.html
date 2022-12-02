@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Лабораторная работа 1.1, Бухов Александр ИУ6-35Б</title>
+</head>
+<body>
+  <h3>Список футбольных команд:</h3>
+  <ol>
+    <li><em>Реал</em></li>
+    <li>Ливерпуль</li>
+    <li><em>Барселона</em></li>
+    <li>Милан</li>
+    <li><em>Спартак</em></li>
+  </ol>
+  
+  <h3>Список футбольных команд (курсив заменён на жирный шрифт):</h3>
+  <ol>
+    <li><strong>Реал</strong></li>
+    <li>Ливерпуль</li>
+    <li><strong>Барселона</strong></li>
+    <li>Милан</li>
+    <li><strong>Спартак</strong></li>
+  </ol>
+  
+  <h4>Футбольные турниры:</h4>
+  <ul>
+    <li>Лига <strong>Чемпионов</strong></li>
+    <li>Лига <mark>Европы</mark></li>
+    <li><s>РФПЛ</s> РПЛ</li>
+  </ul>
+  
+  <p><strong>Парочка <br/> математических <br/> формул:</strong></p>
+
+<p><em>sin<sup>2</sup>x + cos<sup>2</sup>x = 1</em></p>
+<p>H<sub>2</sub>SO<sub>4</sub></p>
+
+<h3>Строки кода:</h3>
+<code>#include &lt;iostream&gt;<br/>
+using namespace std;<br/>
+
+template &lt;class T&gt;<br/>
+class Sum {<br/>
+private:<br/>
+	T a;<br/>
+	T b;<br/>
+public:<br/>
+	Sum(T a, T b) : a(a), b(b) {};<br/>
+	void PrintSum() {<br/>
+		cout &lt;&lt; "Sum is " &lt;&lt; a + b &lt;&lt; endl;<br/>
+	}<br/>
+};<br/>
+
+int main() {<br/>
+	Sum &lt;int&gt; s(5, 3);<br/>
+	s.PrintSum();<br/>
+}</code>
+</body>
+</html>

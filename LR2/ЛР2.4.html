@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="viewport"
+ content="width=device-width, initial-scale=1.0">
+ <title>ICS6 Bootstrap</title>
+ <link
+ href="https://e-learning.bmstu.ru/iu6/pluginfile.php/16891/mod_resource/content/1/bootstrap.min.css" rel="stylesheet">
+ <style>
+ html {
+ position: relative;
+ min-height: 100%;
+ }
+ body {
+ margin-bottom: 40px;
+ }
+ main {
+ margin-top: 15px;
+ }
+ footer {
+ height: 40px;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ }
+ .my-primary {
+ background-color: red;
+ color: white;
+ }
+ 
+ 
+ th.tt, td.tt, tr.tt{
+      border: 1px solid black;
+      padding: 10px;
+    }
+  th, td, tr{
+      padding: 10px;
+    }
+   .log{
+     padding-left: 12px;
+   }
+
+   li em{
+      color:blue;
+      font-size:26px;
+    }
+    .mfk{
+      font: 10px sans-serif;
+      color:green;
+    }
+    .cfk{
+      text-decoration-line: underline;
+      color: red;
+    }
+    .cmfk{
+      text-align: center;
+    }
+    .form{
+      text-shadow: 2px 2px 4px rgba(8,8,8,8.5);
+      cursor: pointer;
+    }
+   
+   .col{
+      padding-top: 40px;
+   }
+   .col-4{
+      padding-top: 40px;
+   }
+   .tb{
+     padding-top:30px;
+   }
+ </style>
+</head>
+<body>
+ <header>
+ <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+ <a class="navbar-brand" href="#">Navbar</a>
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+ <a class="nav-link" href="#">Home
+ <span class="sr-only">(current)</span>
+ </a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="#">Link</a>
+ </li>
+ </ul>
+ </nav>
+ </header>
+ <main class="container">
+ <div class="row">
+ <div class="col-4">
+ <img
+ src="https://e-learning.bmstu.ru/iu6/pluginfile.php/16893/mod_resource/content/1/avatar.jpeg"
+ alt="avatar" width="150" height="150">
+ </div>
+ <div class="col-8">
+ <p>Любой текст</p>
+ </div>
+ </div>
+
+ <div class="row">
+ <div class="col-4">
+ <h5>Регистрация на сайте:</h5>
+  <form>
+  <table>
+    <div class="row"><tr>
+      <td>Логин: <input class="log" type="text" name="login" /><br/></td>
+    </tr></div>
+    <div class="row"><tr>
+      <td>Пароль: <input type="password" name="password"/><br/></td>
+    </tr></div>
+    <div class="row"><tr>
+      <td><input type="submit" value="Отправить данные" /></td>
+    </tr></div>
+  </table>
+  </form>
+ </div>
+ <div class="col-4">
+ <div class="tb">
+  <table class="tt">
+    <div class="row"><tr class="tt">
+    <th class="tt">Неделя</th>
+    <th class="tt">Понедельник</th> 
+    <th class="tt">Вторник</th>
+    <th class="tt">Среда</th>
+    <th class="tt">Четверг</th>
+    <th class="tt">Пятница</th>
+    <th class="tt">Суббота</th>
+    <th class="tt">Воскресенье</th>
+    </tr></div>
+    <div class="row"><tr class="tt">
+      <td class="tt">Числитель</td>
+      <td class="tt">8:30</td>
+      <td rowspan="2"  class="tt">9:50</td>
+      <td class="tt">13:10</td>
+      <td rowspan="2"  class="tt">16:45</td>
+      <td class="tt">11:15</td>
+      <td class="tt">9:30</td>
+      <td class="tt">12:25</td>
+    </tr></div>
+    <div class="row"><tr class="tt">
+      <td class="tt">Знаменатель</td>
+      <td class="tt">14:40</td>
+      <td class="tt">11:10</td>
+      <td class="tt">9:25</td>
+      <td class="tt">15:30</td>
+      <td class="tt">11:40</td>
+    </tr></div>
+  </table>
+    </div>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col">
+  <h5>Список футбольных команд:</h5>
+  <ol>
+    <li><em>Реал</em></li>
+    <li class="mfk">Ливерпуль</li>
+    <li><em>Барселона</em></li>
+    <li class="mfk">Милан</li>
+    <li><em>Спартак</em></li>
+  </ol>
+  
+  <h5>Список футбольных команд (курсив заменён на жирный шрифт):</h5>
+  <ol>
+    <li class="cfk"><strong>Реал</strong></li>
+    <li class="cmfk">Ливерпуль</li>
+    <li class="cfk"><strong>Барселона</strong></li>
+    <li class="cmfk">Милан</li>
+    <li class="cfk"><strong>Спартак</strong></li>
+  </ol>
+  
+  <p><strong>Парочка <br/> математических <br/> формул:</strong></p>
+
+<p class = "form"><em>sin<sup>2</sup>x + cos<sup>2</sup>x = 1</em></p>
+<p class = "form">H<sub>2</sub>SO<sub>4</sub></p>
+ </div>
+ </div>
+ </main>
+ <footer class="my-primary">
+ <div class="container">
+ <p class="footer-text">Footer</p>
+ </div>
+ </footer>
+</body>
+</html>
